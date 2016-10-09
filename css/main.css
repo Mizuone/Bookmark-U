@@ -1,0 +1,142 @@
+body {
+    background-color: #BBDEFB;
+    font-family: 'Roboto', sans-serif;
+}
+* {
+    transition: 0.1s ease-in-out;
+}
+.categoryangular h1:first-letter {
+    color: rgba(255, 0, 0, 0.5);
+}
+.categoryionic h1:first-letter {
+    color: rgba(0, 0, 255, 0.5);
+}
+.categoryreading h1:first-letter {
+    color: rgba(0, 255, 0, 0.5);
+}
+.categoryprogramming h1:first-letter {
+    color: rgba(150, 150, 150, 0.5);
+}
+.categorycustom h1:first-letter {
+    color: rgba(255, 150, 0, 0.5);
+}
+.navbar {
+    background-color: #0D47A1;
+    border: 0px solid transparent;
+    border-radius: 0px;
+    box-shadow: 0 1px 4px #333;
+}
+.additem {
+    position: relative;
+    left: 200px;
+    background-color: #42A5F5;
+    border-radius: 50%;
+    width: 115%;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+}
+.bookitem {
+    position: relative;
+    height: 35%;
+    top: 75px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+    margin-top: 24px;
+}
+.buttoncontainer {
+    position: absolute;
+    top: 65%;
+    margin: 12px;
+    margin-top: 1.6em;
+    margin-left: 0px;
+}
+.buttoncontainer a {
+    color: white;
+    text-decoration: none;
+}
+.glyphicon {
+    position: relative;
+    padding: 10px;
+    font-size: 1.5em;
+    left: 130px; 
+}
+.glyphicon-trash {
+    color: darkred;
+}
+.glyphicon-trash:hover {
+    color: crimson;
+}
+.glyphicon-pencil {
+    color: black;
+    margin-right: 20px;
+}
+.glyphicon-pencil:hover {
+    color: gold;
+}
+.gotosite {
+    margin-top: 10px;
+    background-color: white;
+    height: 27px;
+    border-radius: 1.5px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.5);
+}
+.gotosite:hover {
+    color: #0D47A1;
+}
+/*Centers navbar listitems*/
+.navbar-nav {
+    width: 80%;
+    text-align: center;
+}
+.navbar-nav li {
+    float: none;
+    display: inline-block;
+    font-size: 1.5em;
+}
+/*Anchor link coloring, on default, focus, and hover*/
+.navbar-default 
+.navbar-nav>li>a {
+    color: white;
+}
+.navbar-default 
+.navbar-nav>li>a:focus,.navbar-default 
+.navbar-nav>li>a:hover  {
+    color: #64B5F6;
+}
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover {
+    background-color: #0D47A1;
+}
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover {
+    color: #64B5F6;
+}
+/*Space between list items in nav*/
+.navbar-nav li {
+    margin: 10px;
+}
+/*Brand Styling*/
+.navbar-brand {
+    position: relative;
+    left: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 2em;
+    font-family: 'Shrikhand', cursive;
+}
+.navbar-default .navbar-brand:hover {
+    color: #64B5F6;
+}
+.navbar-default .navbar-brand {
+    color: white;
+}
+.col-lg-offset-1 {
+    margin-left: 6.3%;
+}
+.navbar {
+    margin-bottom: 0px;
+}
