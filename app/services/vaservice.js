@@ -28,34 +28,48 @@ app.service('vaservice', function(ionicservice, angularservice, readingservice, 
         return collection;
     }
     vaservice.vaCollection = pushIntoCollection(angularservice, "angularCollection", 1);
-    console.log(vaservice.vaCollection);
     
     //Arranges a partial multi demensional array to a single array of objects
     //Organizes a collection consisting of 3 objects for the first 3 elements
     //After that is will organize sub arrays
     function collectionOrganizer(service, collection) {
         let newCollection = [];
+        let id = 0;
         for (let i = 0; i < service[collection].length; i++) {
             if (i >= 3) {
                 break;
             }
+            service[collection][i].id = id;
             newCollection.push(service[collection][i]);
-            
+            id++;
         }
         
         for (let i = 3; i < service[collection].length; i++) {
             
             for (let x = 0; x < service[collection][i].length; x++) {
+                service[collection][i][x].id = id
                 newCollection.push(service[collection][i][x]);
-                console.log(newCollection); 
+                id++;
+                 
             }
         }
-        
         return newCollection;
     }
     vaservice.vaCollection = collectionOrganizer(vaservice, "vaCollection");
+        //pass id from the expression
+    //check if that id is === to its objects id
+    //if so remove it from the array
     
-    console.log(vaservice.vaCollection);
+    vaservice.removeMark = function (id) {
+        for (var i = 0; i < vaservice.vaCollection.length; i++) {
+            if (vaservice.vaCollection[i].id === id) {
+                
+                var index = vaservice.vaCollection.indexOf(vaservice.vaCollection[i]);
+                vaservice.vaCollection.splice(index, 1);
+            }
+        }
+    }
+    
     
     return vaservice;
 })

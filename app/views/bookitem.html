@@ -3,8 +3,8 @@
         <p>{{ item.description }} </p>
         <div class="buttoncontainer">
             <a href="{{ item.siteurl }}"><span class="gotosite">Go to Site</span></a>
-            <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="#"><span class="glyphicon glyphicon-trash"></span></a>
+            <a href="#/editbookmark/{{ item.id }}"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="" ng-click="removeMark(item.id)"><span class="glyphicon glyphicon-trash"></span></a>
         </div>
 </div>
 <div ng-if="item.category === 'ionic'" ng-class="{categoryionic: item.category === 'ionic'}">
@@ -12,8 +12,8 @@
         <p>{{ item.description }} </p>
         <div class="buttoncontainer">
             <a href="{{ item.siteurl }}"><span class="gotosite">Go to Site</span></a>
-            <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="#"><span class="glyphicon glyphicon-trash"></span></a>
+            <a href="#/editbookmark/{{ item.id }}"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="" ng-click="removeMark(item.id)"><span class="glyphicon glyphicon-trash"></span></a>
         </div>
 </div>
 <div ng-if="item.category === 'reading'" ng-class="{categoryreading: item.category === 'reading'}">
@@ -21,8 +21,8 @@
         <p>{{ item.description }} </p>
         <div class="buttoncontainer">
             <a href="{{ item.siteurl }}"><span class="gotosite">Go to Site</span></a>
-            <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="#"><span class="glyphicon glyphicon-trash"></span></a>
+            <a href="#/editbookmark/{{ item.id }}"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="" ng-click="removeMark(item.id)"><span class="glyphicon glyphicon-trash"></span></a>
         </div>
 </div>
 <div ng-if="item.category === 'programming'" ng-class="{categoryprogramming: item.category === 'programming'}">
@@ -30,8 +30,8 @@
         <p>{{ item.description }} </p>
         <div class="buttoncontainer">
             <a href="{{ item.siteurl }}"><span class="gotosite">Go to Site</span></a>
-            <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="#"><span class="glyphicon glyphicon-trash"></span></a>
+            <a href="#/editbookmark/{{ item.id }}"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="" ng-click="removeMark(item.id)"><span class="glyphicon glyphicon-trash"></span></a>
         </div>
 </div>
 <div ng-if="item.category === 'custom'" ng-class="{categorycustom: item.category === 'custom'}">
@@ -39,7 +39,7 @@
         <p>{{ item.description }} </p>
         <div class="buttoncontainer">
             <a href="{{ item.siteurl }}"><span class="gotosite">Go to Site</span></a>
-            <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="#"><span class="glyphicon glyphicon-trash"></span></a>
+            <a href="#/editbookmark/{{ item.id }}"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="" ng-click="removeMark(item.id)"><span class="glyphicon glyphicon-trash"></span></a>
         </div>
 </div>

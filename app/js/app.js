@@ -25,6 +25,10 @@ app.config(function($routeProvider) {
         templateUrl: "/app/views/custom.html",
         controller: 'HomeController'
     })
+    .when("/editbookmark/:id", {
+        templateUrl: "/app/views/editbookmark.html",
+        controller: 'Editbookmark'
+    })
     .otherwise({
         redirectTo: "/"
     }) 

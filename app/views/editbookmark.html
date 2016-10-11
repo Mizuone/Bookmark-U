@@ -1,0 +1,28 @@
+<div class="container editbookmark">
+    <h1 class="jumbotron">Edit Bookmark</h1>
+    <form>
+        <label>
+            <input type="text" placeholder="Name" value="{{ bookItem.name }}" required>
+        </label>
+        <label>
+            <input type="text" placeholder="Description" value="{{ bookItem.description }}" required>
+        </label>
+        <label>
+            <input type="text" placeholder="Site URL" value="{{ bookItem.siteurl }}" required>
+        </label>
+        <label>
+            Category:
+            <select>
+                <option></option>
+                <option value="angular">angular</option>
+                <option value="ionic">ionic</option>
+                <option value="reading">reading</option>
+                <option value="programming">programming</option>
+                <option value="custom">custom</option>
+            </select>
+        </label>
+        <button class="btn btn-success">Save</button>
+        <button class="btn btn-default">Cancel</button>
+    </form>
+
+</div>

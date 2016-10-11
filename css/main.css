@@ -2,8 +2,41 @@ body {
     background-color: #BBDEFB;
     font-family: 'Roboto', sans-serif;
 }
+label {
+    display: block;
+    font-size: 1.5em;
+    color: rgba(0,0,0,0.4);
+}
+button {
+    margin: 20px auto;
+    width: 100%;
+    height: 50px;
+}
+.btn {
+    display: block;
+    font-size: 1.5em;
+}
+input {
+    width: 100%;
+    border: 0 solid transparent;
+    border-bottom: solid 1px rgba(0,0,0,0.3);
+    outline: 0;
+    margin: 10px 0px 10px 0px;
+}
+input:focus {
+    border-bottom: solid 2px #2196F3;
+}
+select {
+    margin-top: 18px;
+    color: rgba(0,0,0,0.7);
+    width: 15%;
+}
 * {
     transition: 0.1s ease-in-out;
+}
+h1.jumbotron {
+    background-color: #0D47A1;
+    color: white;
 }
 .categoryangular h1:first-letter {
     color: rgba(255, 0, 0, 0.5);
@@ -34,13 +67,16 @@ body {
     width: 115%;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
 }
-.bookitem {
+.bookitem, .editbookmark {
     position: relative;
     height: 35%;
     top: 75px;
     background-color: white;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
     margin-top: 24px;
+}
+.editbookmark {
+    height: 575px;
 }
 .buttoncontainer {
     position: absolute;
