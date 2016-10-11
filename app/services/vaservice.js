@@ -56,9 +56,6 @@ app.service('vaservice', function(ionicservice, angularservice, readingservice, 
         return newCollection;
     }
     vaservice.vaCollection = collectionOrganizer(vaservice, "vaCollection");
-        //pass id from the expression
-    //check if that id is === to its objects id
-    //if so remove it from the array
     
     vaservice.removeMark = function (id) {
         for (var i = 0; i < vaservice.vaCollection.length; i++) {

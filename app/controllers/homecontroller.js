@@ -8,7 +8,6 @@ app.controller('HomeController', ['$scope','vaservice', 'angularservice', 'ionic
     $scope.customCollection = $customservice.customCollection;
     
     $scope.removeMark = function(id) {
-        console.log(id);
         $vaservice.removeMark(id);
     }
     

@@ -1,45 +1,15 @@
 <div ng-if="item.category === 'angular'" ng-class="{categoryangular: item.category === 'angular'}">
-    <h1>{{ item.name }}</h1>
-        <p>{{ item.description }} </p>
-        <div class="buttoncontainer">
-            <a href="{{ item.siteurl }}"><span class="gotosite">Go to Site</span></a>
-            <a href="#/editbookmark/{{ item.id }}"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="" ng-click="removeMark(item.id)"><span class="glyphicon glyphicon-trash"></span></a>
-        </div>
+    <bmitemcontents></bmitemcontents>
 </div>
 <div ng-if="item.category === 'ionic'" ng-class="{categoryionic: item.category === 'ionic'}">
-    <h1>{{ item.name }}</h1>
-        <p>{{ item.description }} </p>
-        <div class="buttoncontainer">
-            <a href="{{ item.siteurl }}"><span class="gotosite">Go to Site</span></a>
-            <a href="#/editbookmark/{{ item.id }}"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="" ng-click="removeMark(item.id)"><span class="glyphicon glyphicon-trash"></span></a>
-        </div>
+    <bmitemcontents></bmitemcontents>
 </div>
 <div ng-if="item.category === 'reading'" ng-class="{categoryreading: item.category === 'reading'}">
-    <h1>{{ item.name }}</h1>
-        <p>{{ item.description }} </p>
-        <div class="buttoncontainer">
-            <a href="{{ item.siteurl }}"><span class="gotosite">Go to Site</span></a>
-            <a href="#/editbookmark/{{ item.id }}"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="" ng-click="removeMark(item.id)"><span class="glyphicon glyphicon-trash"></span></a>
-        </div>
+    <bmitemcontents></bmitemcontents>
 </div>
 <div ng-if="item.category === 'programming'" ng-class="{categoryprogramming: item.category === 'programming'}">
-    <h1>{{ item.name }}</h1>
-        <p>{{ item.description }} </p>
-        <div class="buttoncontainer">
-            <a href="{{ item.siteurl }}"><span class="gotosite">Go to Site</span></a>
-            <a href="#/editbookmark/{{ item.id }}"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="" ng-click="removeMark(item.id)"><span class="glyphicon glyphicon-trash"></span></a>
-        </div>
+    <bmitemcontents></bmitemcontents>
 </div>
 <div ng-if="item.category === 'custom'" ng-class="{categorycustom: item.category === 'custom'}">
-    <h1>{{ item.name }}</h1>
-        <p>{{ item.description }} </p>
-        <div class="buttoncontainer">
-            <a href="{{ item.siteurl }}"><span class="gotosite">Go to Site</span></a>
-            <a href="#/editbookmark/{{ item.id }}"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="" ng-click="removeMark(item.id)"><span class="glyphicon glyphicon-trash"></span></a>
-        </div>
+    <bmitemcontents></bmitemcontents>
 </div>
