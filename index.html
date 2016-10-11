@@ -27,6 +27,7 @@
         <script src="app/services/customservice.js"></script>
         <!--Directives-->
         <script src="/app/directives/bookitem.js"></script>
+        <script src="app/directives/bookitemcontents.js"></script>
     </head>
     <body ng-app="BookmarkU">
         
@@ -45,18 +46,18 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li><a href="#/">View All <span class="sr-only">(current)</span></a></li>
+                <li><a href="#/" title="View All">View All <span class="sr-only">(current)</span></a></li>
                 <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Filter <span class="caret"></span></a>
+                  <a title="Filter By Category" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Filter <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                      <li><a href="#/angular">Angular</a></li>
-                      <li><a href="#/ionic">Ionic</a></li>
-                      <li><a href="#/reading">Books</a></li>
-                      <li><a href="#/programming">Programming</a></li>
-                      <li><a href="#/custom">Custom</a></li>
+                      <li><a href="#/angular" title="Filter By Angular">Angular</a></li>
+                      <li><a href="#/ionic" title="Filter By Ionic">Ionic</a></li>
+                      <li><a href="#/reading" title="Filter By Books">Books</a></li>
+                      <li><a href="#/programming" title="Filter By Programming">Programming</a></li>
+                      <li><a href="#/custom" title="Filter By Custom">Custom</a></li>
                   </ul>
                 </li>
-                  <li><a href="#/" class="additem">+ <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#/" class="additem" title="Add Bookmark">+ <span class="sr-only">(current)</span></a></li>
               </ul>
                 
             </div><!-- /.navbar-collapse -->
