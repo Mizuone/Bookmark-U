@@ -12,8 +12,9 @@ app.controller('HomeController', ['$scope','vaservice', 'angularservice', 'ionic
     }
     
     
-    
+    console.log("Hello");
     $scope.$watch(function() { return $vaservice.vaCollection }, function(vaCollection) {
         $scope.vaCollection = vaCollection;
+        
     })
 }])

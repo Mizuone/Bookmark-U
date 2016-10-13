@@ -1,7 +1,7 @@
 app.controller('Addbookmark', ['$scope', 'vaservice', '$location', function($scope, $vaservice, $location) {
     
     $scope.bookMark = {};
-    $scope.bookMark.name = "s";
+    $scope.bookMark.name = "";
     $scope.bookMark.description = "";
     $scope.bookMark.siteurl = "";
     $scope.bookMark.category = "";
@@ -20,6 +20,7 @@ app.controller('Addbookmark', ['$scope', 'vaservice', '$location', function($sco
             }
         }
         $vaservice.vaCollection.push($scope.bookMark);
+        localStorage.setItem($scope.bookMark.id, JSON.stringify($scope.bookMark));
         $location.path("/");
     }
 }]);

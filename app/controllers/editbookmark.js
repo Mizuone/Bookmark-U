@@ -15,6 +15,8 @@ app.controller('Editbookmark', [ '$scope', '$routeParams', '$location', 'vaservi
                 $vaservice.vaCollection[i].description = bookItem.description;
                 $vaservice.vaCollection[i].siteurl = bookItem.siteurl;
                 $vaservice.vaCollection[i].category = bookItem.category;
+                
+                localStorage.setItem($vaservice.vaCollection[i].id, angular.toJson($vaservice.vaCollection[i]));
                 $location.path("/");
             }
         }
