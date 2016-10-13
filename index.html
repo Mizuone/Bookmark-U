@@ -18,6 +18,7 @@
         <!--Controllers-->
         <script src="/app/controllers/homecontroller.js"></script>
         <script src="/app/controllers/editbookmark.js"></script>
+        <script src="/app/controllers/addbookmark.js"></script>
         <!--Services-->
         <script src="/app/services/vaservice.js"></script>
         <script src="app/services/angularservice.js"></script>
@@ -35,7 +36,7 @@
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bootstrap-collapse" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -44,7 +45,7 @@
               <a class="navbar-brand" href="#">Bookmark-U</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="bootstrap-collapse">
               <ul class="nav navbar-nav">
                 <li><a href="#/" title="View All">View All <span class="sr-only">(current)</span></a></li>
                 <li class="dropdown">
@@ -57,14 +58,14 @@
                       <li><a href="#/custom" title="Filter By Custom">Custom</a></li>
                   </ul>
                 </li>
-                  <li><a href="#/" class="additem" title="Add Bookmark">+ <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#/addbookmark" class="additem" title="Add Bookmark">+ <span class="sr-only">(current)</span></a></li>
               </ul>
                 
-            </div><!-- /.navbar-collapse -->
+            </div>
               <ul class="nav navbar-nav">
                     
               </ul>
-          </div><!-- /.container-fluid -->
+          </div>
         </nav>
         <main>
             <div class="container-fluid" ng-view>

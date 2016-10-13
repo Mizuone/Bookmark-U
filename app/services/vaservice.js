@@ -58,6 +58,10 @@ app.service('vaservice', function(ionicservice, angularservice, readingservice, 
     vaservice.vaCollection = collectionOrganizer(vaservice, "vaCollection");
     
     vaservice.removeMark = function (id) {
+        var con = confirm("Do you want to delete this bookmark?");
+        if (!con) {
+            return;
+        }
         for (var i = 0; i < vaservice.vaCollection.length; i++) {
             if (vaservice.vaCollection[i].id === id) {
                 

@@ -2,17 +2,17 @@
     <h1 class="jumbotron">Add Bookmark</h1>
     <form>
         <label>
-            <input type="text" placeholder="Name" ng-model="bookItem.name" required>
+            <input type="text" placeholder="Name"  ng-model="bookMark.name" required>
         </label>
         <label>
-            <input type="text" placeholder="Description" ng-model="bookItem.description" required>
+            <input type="text" placeholder="Description" ng-model="bookMark.description" required>
         </label>
         <label>
-            <input type="text" placeholder="Site URL" ng-model="bookItem.siteurl" required>
+            <input type="text" placeholder="Site URL"  ng-model="bookMark.siteurl" required>
         </label>
         <label>
             Category:
-            <select ng-model="bookItem.category">
+            <select ng-model="bookMark.category" required>
                 <option></option>
                 <option value="angular">angular</option>
                 <option value="ionic">ionic</option>
@@ -21,7 +21,7 @@
                 <option value="custom">custom</option>
             </select>
         </label>
-        <button class="btn btn-success" ng-click="saveBookmark(bookItem)" title="Save Bookmark">Save</button>
+        <button class="btn btn-success" ng-click="addBookItem()" title="Add Bookmark">Add Bookmark</button>
         <a href="#/"><button class="btn btn-default" title="Go Back">Cancel</button></a>
     </form>
 

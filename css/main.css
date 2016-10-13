@@ -180,3 +180,71 @@ h1.jumbotron {
 .navbar {
     margin-bottom: 0px;
 }
+.bookitem p {
+    height: 150px;
+    overflow: auto;
+}
+@media screen and (max-width: 1530px) {
+    .glyphicon {
+        left: 60px; 
+    }
+}
+@media screen and (max-width: 1250px) {
+    .glyphicon {
+        left: 25px; 
+    }
+}
+@media screen and (max-width: 1130px) {
+    .navbar-nav {
+        width: 50%;
+    }
+    .additem {
+        left: 100px;
+    }
+    .col-lg-offset-1 {
+        margin-left: 6.3%;
+    }
+    .glyphicon {
+        left: 0px; 
+    }
+    .bookitem p {
+        height: 100px;
+    }
+    .glyphicon-pencil {
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width: 770px) {
+    .glyphicon-pencil {
+        margin-right: 25px;
+    }
+    .navbar-header button {
+        position: relative;
+        right: 100px;
+        width: 45px;
+    }
+    .col-lg-offset-1{
+        margin-left: 0%;
+    }
+    .glyphicon {
+        left: 100px; 
+    }
+}
+@media screen and (max-width: 450px) {
+    .navbar-header button {
+        right: 25px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .glyphicon {
+        left: 25px; 
+    }
+    .glyphicon-pencil {
+        margin-right: 20px;
+    }
+}
+@media screen and (max-height: 425px) {
+    .bookitem {
+        height: 75%;
+    }
+}
