@@ -11,8 +11,14 @@ app.controller('HomeController', ['$scope','vaservice', 'angularservice', 'ionic
         $vaservice.removeMark(id);
     }
     
+    $scope.checkLocalStorage = function() {
+        for (let i = 0; i < localStorage.length; i++) {
+            if(localStorage.key(i).charAt(0) === 't') {
+                localStorage.removeItem(localStorage.key(i));
+            }
+        }
+    }
     
-    console.log("Hello");
     $scope.$watch(function() { return $vaservice.vaCollection }, function(vaCollection) {
         $scope.vaCollection = vaCollection;
         
